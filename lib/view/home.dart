@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
             return Center(child: CircularProgressIndicator(),);
           } else {
             return StaggeredGridView.countBuilder(crossAxisCount: 4,
+              itemCount: listPictureViewModel.pictures!.length,
               itemBuilder: (BuildContext context, int index) =>
                   Container(
                     color: Colors.grey,
